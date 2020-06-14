@@ -1,0 +1,1 @@
+<?php /**PATH C:\laragon\www\StandPlace secondaire\resources\views/administration/layout/corpsStatistiques.blade.php ENDPATH**/ ?>

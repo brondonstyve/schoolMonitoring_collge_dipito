@@ -1,0 +1,8 @@
+    @include('layout/css')
+    @include('layout/header')
+    @include('layout/imgcontact')
+    @include('layout/go-up')
+    @include('layout/contact')
+    @include('flashy::message')
+    @include('layout/footer')
+    @include('layout/fin')

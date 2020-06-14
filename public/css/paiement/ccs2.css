@@ -1,0 +1,314 @@
+/*---Rounded Corners---*/
+.rbox {background-color:#ebebeb;}
+.rbox_white {margin:0 10px;}
+.rbox_white .rbody{background-color:#fff;}
+.rbody h3, .rbody h2 {margin-top:0;}
+.rcorners {height:10px; overflow:hidden;}
+.bmc, .tmc {height:10px; margin-left:10px; margin-right:10px; background-color:#ebebeb;}
+.tlc, .trc, .blc, .brc {width:16px; height:16px; background-image: url('/images/scr_grey_corner_sprites.gif');}
+/*ie6 3px bug fix */
+.tlc, .blc {margin-right:-3px !important;border-right:3px solid #ebebeb}
+.trc, .brc {margin-left:-3px !important;border-left:3px solid #ebebeb}
+.rbox_clear .rbody {border:0; background-color:#fff;}
+.rbox_clear .rcorners {display:none;}
+.rbox_clear .rcorners div {display:none;}
+/*White rounded box*/
+.rbox_white .tlc, .rbox_white .blc {margin-right:-3px !important;border-right:3px solid #fff}
+.rbox_white .trc, .rbox_white .brc {margin-left:-3px !important;border-left:3px solid #fff}
+.rbox_white .bmc, .rbox_white .tmc {background-color:#fff;}
+.rbox_white .rcorners {display:block;background-color:transparent;}
+.rbox_white .rcorners div {display:block;}
+.rbox_white .tlc, .rbox_white  .trc, .rbox_white .blc, .rbox_white .brc{background-image: url('/images/scr_white_corner_sprites.gif');}
+.tlc {float:left; background-position: 0px 0px;}
+.trc {float: right; background-position: 0px -100px;}
+.blc {float:left;background-position: 0px -206px;}
+.brc {float:right; background-position: 0px -306px;}
+/*no rounded corners*/
+.noRoundedCornerLayout {margin:0; padding:0; border:0; background-color:#fff;}
+/*---Expand-Collapse-Bars---*/
+.expandoCollapso, .controller{overflow:hidden; margin:0; border:0; padding:0;}
+.expandoCollapso {margin-bottom:10px;}
+.container {clear:both; display:block; border:1px solid #eee; padding-left:20px; padding:20px 10px 20px 10px;background-color:#FFFFFF;}
+.controller {margin:0; padding:0; border:1px solid #eee; border-bottom:0; color:#336699; background-color:#eee; font-weight:bold; cursor: pointer; _cursor: hand;}
+h3 {margin-bottom:15px;}
+.controller .icons {float:left; width:4px; margin-right:10px; padding:15px 0px 15px 20px; text-align:center;}
+.controller .title {padding:15px 0;}
+.inactive .container {display:none;}
+.inactive .controller {border-bottom:1px solid #eee;}
+.icon_collapse {display:none; margin-top:-2px;* margin-top:-4px; font-size:14px;}
+.icon_expand {display:block; margin-top:-6px;margin-bottom:-6px; font-size:20px;}
+.icon_separator {color:#fff;}
+.inactive .controller .icon_collapse {display:block;margin:0;padding:0;}
+.inactive .controller .icon_expand {display:none;}
+#paypalLogin {padding-right:10px;}
+.title img{vertical-align:middle}
+.controller{background-image: url('/images/scr_white_trans_gradient_1_48.png');background-position: left top;background-repeat:repeat-x;}
+.current .controller, .controllerHover {background-image:none}
+
+/*##--HSS--##*/
+/*--Header--*/
+#xptHSSHeader{color:#333; font-size:24px; font-weight:bold}
+#xptHSSHeader h1{margin:0;padding:0 25px}
+/*--Footer--*/
+#contentPageThankyou, #contentPagePayment{position:relative}
+#secureCheckout{clear:both; margin:0; padding-bottom:20px; padding-right:4px; color:#757575; font-style:italic; text-decoration:none; text-align:right;}
+#secureCheckout img{vertical-align:middle;}
+/*--OrderSummaryCML--*/
+
+#contentPageThankyou, #contentPaymentOptions{
+	position:relative;
+}
+
+/*--Default--*/
+.contentTitle {font-size:1.33em;margin-bottom:25px}
+#contPaymentOptionsContent, #contentOrderSummaryRounded, #contentPageThankyou {min-height:500px;height:auto !important; height:500px;}
+#contentOrderSummaryRounded #orderSummaryContainer{padding:0px 20px}
+
+/*##--Thankyou--##*/
+#contentThankyouPaymentInfo {margin-bottom:15px; border-bottom:1px solid #ccc;}
+#contentPageThankyou .layout3 div.col {width:280px;}/*over-ridden from global.css*/
+#content{padding:0}/*over-ridden from global.css*/
+/*##--Payment--##*/
+
+#contentOrderSummaryRounded .rbody{height:auto !important;}
+
+/*##Customization##*/
+/*--Thankyou--*/
+.thankyouTemplateA #contentPageThankyou{
+	padding:5px 20px;
+}
+.thankyouTemplateBC #contentPageThankyou{
+	padding:30px;
+}
+.thankyouTemplateBC #content{
+	margin-top:0;
+}
+.thankyouTemplateBC #contentPageThankyou #orderSummaryContainer {
+	margin-top:40px; margin-bottom:30px;
+}
+
+/*--Payment--*/
+/*-A-*/
+.paymentTemplateA #contPaymentOptionsContent, .paymentTemplateA #secureCheckout{
+	padding:5px 20px;
+}
+.paymentTemplateA #contentPaymentOptions .rbox_white{
+	margin-right:0
+}
+/*-B-*/
+.paymentTemplateB #contentPaymentOptions{
+	padding:25px;
+}
+.paymentTemplateB #secureCheckout{
+	padding:0;
+	padding-top:25px;
+}
+.paymentTemplateB #content, .paymentTemplateC #content{
+	margin-top:0;
+}
+.paymentTemplateB #contentOrderSummaryRounded{
+	padding-top:10px;
+}
+/*-AB-*/
+.paymentTemplateA #contentPaymentOptions, .paymentTemplateB #contentPaymentOptions{
+	margin-bottom:0;
+	margin-right:240px;
+}
+.paymentTemplateA #contentOrderSummaryRounded, .paymentTemplateB #contentOrderSummaryRounded{
+	position:relative;
+	float:right;
+	width:240px;
+	margin-bottom:0;
+	margin-right:0;
+}
+/*-C-*/
+.paymentTemplateC #contentPaymentOptions{
+	margin:0px 155px;
+	padding-bottom:20px;
+}
+.paymentTemplateC #contentOrderSummary{
+	margin:0px 155px;
+	padding-top:20px;
+}
+.paymentTemplateC #grayDot{
+	margin:0px 105px;
+	padding:20px 0;
+	background:transparent url('/images/scr_grayDotRepeatBg_3x1.gif') center center repeat-x;
+}
+.paymentTemplateC #content, .paymentTemplateC #content{
+	margin-top:0;
+}
+
+/* IE6 Specific Fix for PNG Transparency issues */
+*html .controller{
+	height:40px;
+}
+*html .controller{
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src='/images/scr_white_trans_gradient_1_48.png');
+}
+
+*html .current .controller, *html .controllerHover{
+	filter:none;
+}
+
+
+*html .controllerHover {
+	background-image:none;
+}
+
+.errorMessage{
+background:#FECF71;
+border:1px solid #9B0033;
+FONT-WEIGHT:bold;
+padding: .3em 5em .3em .3em;
+FONT-SIZE: 11px;
+width:420px;
+margin: 10px 0 0 0;
+}
+
+.formContainer { width: 100%;padding-left: 1.5em;}
+.formContainerBody {FONT-SIZE: 0.97em;border:0px solid #9B0033;padding-bottom: 1.5em;}
+
+div.addressSpacing {float:left;width:420px;padding-right:25px;*width:445px;*padding-right:0px;}
+div.addressSpacing div {word-wrap:break-word;}
+.separatorStyle {border-bottom: 1px solid #cccccc; padding-bottom: 10px;}
+.orderDetails {width:320px;padding-top:30px;clear:both;}
+.helpText{display:inline;margin-right:45px;padding:0;color:#777777;font-size:0.9em;}
+.helpTextBottomMargin{margin-bottom:0px !important;}
+.helpTextTopMargin{margin-top:0px !important;}
+.cscAlignment{margin-left:63px;}
+.issueNumberAlignment{margin-left:39px;}
+.alignLeft{float:left;}
+#formPayment .autoTooltip, #formLogin .autoTooltip{position: static; width: auto;margin-left:0.2em;}
+.body{text-align: left;}
+.cclogo{display:inline-block;background:transparent url(/images/en_US/payment_icons_sprite.2D.png) no-repeat 0 0;width:45px;height:24px;}
+.vi{background-position:0px -33px;}
+.mc{background-position:0px -60px;}
+.ax{background-position:0px -120px;}
+.ds{background-position:0px -90px;}
+.di{background-position:0px -331px;}
+.jb{background-position:-202px -30px;}
+.so{background-position:0px -210px;}
+div.messageBox.error{color:#333333;background-image:url(/images/en_US/icon_alert_24wx24h.gif);padding-left:55px;}
+.topBorder{border-top: solid 1px #cccccc;padding-top:10px;}
+.bottomBorder{border-bottom: solid 1px #cccccc;padding-top:10px;}
+.textRight{text-align:right;}
+#orderSummaryTable{width:320px;}
+#orderSummaryTable th { text-align:left;}
+.rbody #orderSummaryContainer table{width:180px;}
+#templateB .top img, #templateB .bottom img  {display:none;}
+.radio span.billAsSameShipping, .radio span.billDifferentShipping, .radio input{vertical-align:middle;}
+
+/*pay with paypal section styles*/
+#formLogin p.fasterSaferText{padding:0; margin:0 0 0 200px;}
+#formLogin p.payWithPaypal{padding:0px; margin:20px 0 0 200px;}
+#formLogin p.buttons input{border:0px;}
+#formLogin div.paypalImg{float:left; width:160px; *width:180px; text-align:right;margin:0; padding:20px 20px 20px 0; border-right:1px solid #EEE;}
+.paypalImg img{vertical-align:middle;}
+.ecSection{display:inline;}
+
+/* For Mini Page */
+#iframeContainer div.messageBox {margin:10px 30px 0 10px;}
+#iframeContainer {width:490px;height:600px;}
+.shadowBox{border-color:#cccccc;border-width:0px 1px 1px 0px;border-style:solid;background-color:#ccc;padding:0px 1px 1px 0px;}
+#iframeContainer .shadowBox {margin:10px 30px 10px 10px;}
+#iframeContainer div.miniController {padding:8px 0 7px 0;}
+/*#iframeContainer div.miniContainer {padding:0 10px 10px 10px ;}*/
+#iframeContainer div.miniController .arrowicon {float:left;margin:0px 5px 5px 0;}
+#iframeContainer div.miniController .bartitle {padding:1px 0 5px 5px;}
+#iframeContainer div.miniController p {margin:0;padding:0 0 7px 0 ;}
+.miniContainer #formLogin input {margin-left:140px;}
+.payeasy {width:87px; *width:98px; position:absolute;margin:0 10px 0 33px;border-right:solid 1px #eeeeee;padding-right:10px;text-align:right;}
+p span.showOncard{color:#777777;clear:both; float:left;font-size:0.9em;margin-left:41px;}
+#iframeContainer form.edit p.group label{width:125px;}
+#iframeContainer form.edit p.group span.field, #iframeContainer #formPayment p.buttons{margin-left:11.7em;}
+#iframeContainer form.edit p.ccSprite {margin-top:0;margin-bottom:0;}
+#iframeContainer #formLogin p.buttons{margin:6px 0px 0px 0px;}
+#fieldrowCCStartDate p.group{margin:0px;}
+#iframeContainer .helpTextBottomMargin{height:15px;}
+#iframeContainer #returnToMerchant{margin-left:10px;}
+
+/* For template A */
+#templateA .outerCorner, #templateA .outerCorner img {background-image:url("/images/scr_grey_corner_sprites.gif");background-repeat:no-repeat;}
+#templateA .top {background-position:right -100px;}
+#templateA .top img {background-position:0 0;}
+#templateA .bottom {background-position:right -300px;}
+#templateA .bottom img {background-position:0 -200px;}
+#templateA #contentOrderSummaryRounded {padding-top:0;}
+#templateA #templateBodyContent, #templateA #contentOrderSummaryRounded{background-color:#EBEBEB;}
+#templateA {float:left; width:940px;}
+#templateA .roundedCorner{background-color:#EBEBEB; padding-left:10px;}
+#templateA #contentPaymentOptions{padding:0;background:none repeat scroll 0 0 #EBEBEB;}
+#templateA .whiteMiddleContent{padding:10px 20px;}
+#templateA .noMarginBottom{margin-bottom:0;}
+
+#orderSummaryTable td{font-size:75%}
+#templateA, #templateB{padding-bottom:10px;}
+
+.group legend .accntType{font-weight:normal;}
+
+/* Fix Chrome alignment issue */
+#templateA form.edit p.group span.field, #templateB form.edit p.group span.field{margin-left:200px;}
+#templateA form.edit fieldset.group div, #templateB form.edit fieldset.group div{margin-left:195px;}
+
+.pflPreviewFooter{text-decoration:underline;}
+#footerSection .pflFooter{font-size:11px;}
+div .pflFooter{margin-top:10px;}
+
+/* ACH Styles Starts */
+.noMarginBottom .container{background-color:#FFFFFF;}
+.achForm p.fieldRow span.inputText input, .achForm p.group span.field input, .achForm p.fieldRow span.inputText select, .achForm p.group span.field select{width:16.5em;float:left}
+.routingImg{float:right; margin-top:5px;background:url(/images/info_payflow_telecheck_check_sprite.gif) no-repeat scroll 0 0 transparent;height:143px;width:205px;}
+.achForm #shippingAddressBlock{float:left; width:410px;}
+.clearBoth{clear:both;}
+/* ACH Styles Ends */
+
+/* Phase 2 Changes - Starts */
+.controller{height:50px !important;}
+.shadowContent .controllerHover{border:1px solid #FFFFFF;}
+.current .controller{background-color:#FFFFFF !important;}
+.current .controllerHover{margin:0 !important;border:none !important; border-top:1px solid #EEEEEE !important; border-left:1px solid #EEEEEE !important;}
+.shadowBox{padding:0}
+#templateA .controller .icons{color:#DAB509;}
+/* Phase 2 Changes - Ends */
+
+/* for Telecheck */
+.telecheckForm p.fieldRow span.inputText input, .telecheckForm p.group span.field input, .telecheckForm p.fieldRow span.inputText select, .telecheckForm p.group span.field select{width:16.5em;float:left;}
+.telecheckImg{float:right;margin-left:560px;background:transparent url(/images/en_US/info_payflow_telecheck_check_sprite.gif) no-repeat scroll 0 -270px;height:36px;width:56px;position:absolute;}
+.micrImg{float:right;margin-left:225px;background:transparent url(/images/en_US/info_payflow_telecheck_check_sprite.gif) no-repeat scroll 0 -140px;height:123px;width:198px;position:absolute;}
+#teleCheckDetails p.group{clear:both;}
+#teleCheckDetails fieldset legend{font-weight:normal;}
+#federalTaxIdNote span.field{background:transparent url(/images/ico_info_16x16.gif) no-repeat scroll 0 0;padding-left:20px;padding-top:1px; float:left}
+#stateofdl, #provinceofdl{width:auto;}
+#drivingLicenseNumber{float:none;margin-left:35px;width:10em;}
+#templateA form.edit fieldset.group div, #templateB form.edit fieldset.group div#ssn, #templateB form.edit fieldset.group div#fid{margin-left:200px;}
+.ssnLabel{position:absolute;text-align:right;width:180px;}
+#fidBlock fieldset,#ssnBlock{_margin-top:10px;}
+/* for swipe */
+span.buttonAsLink input {text-align:left; margin:0; padding:0; height:1.4em; color:#084482; background-color:transparent; text-decoration:underline; border:none; cursor:pointer; overflow:visible}
+
+/*BML Integration*/
+div.rowPayNow{padding-bottom:10px;}
+div.rowPayLater{padding:20px 0;}
+div.rowPayNow span.payNow, div.rowPayLater span.payLater{width:180px;text-align:right;float:left;margin-right:17px;padding-top:5px;}
+div.rowPayNow span input, div.rowPayLater span input{border:none;}
+div.dottedLine{border-bottom-style:dotted;border-width:1px thin;height:10px;margin:0 30px;}
+div.dottedLine span.orText{position:absolute;background:#fff;margin-left:232px;}
+div.mpi{text-align:center;}
+
+div.miniContainer div.rowPayNow{padding:10px 0 7px 0;}
+div.miniContainer div.rowPayLater{padding-top:15px;}
+div.miniContainer div.rowPayNow span.payNow, div.miniContainer div.rowPayLater span.payLater{width:130px;text-align:right;float:left;margin-right:17px;padding-top:5px;}
+div.miniContainer div.dottedLine{border-bottom-style:dotted;border-width:1px thin;height:9px;margin:0 40px 0 35px;}
+div.miniContainer div.dottedLine span.orText{position:absolute;background:#fff;margin-left:180px;}
+div.miniContainer div.mpi{text-align:center;}
+div.miniContainer #formLogin div.rowPayNow span input, div.miniContainer #formLogin div.rowPayLater span input{margin-left:0;}
+span.ppPromo{font: 0.91em Arial,Helvetica,sans-serif;}
+span.smallHelpText{font-size:0.75em;color:#777777;}
+span input.ppImage{margin-top:5px;}
+
+#lightBoxDiv{text-align:center; display:none; padding:20px;outline:none;}
+#lightBoxDiv_c{outline:none;}
+#lightBoxDiv_mask{width:100% !important}
+#lightBoxDiv div.close{display:none !important}

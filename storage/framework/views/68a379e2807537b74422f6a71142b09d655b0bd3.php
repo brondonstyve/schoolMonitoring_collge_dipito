@@ -1,0 +1,1 @@
+<?php /**PATH C:\laragon\www\StandPlace\resources\views/administration/layout/corpsFormations.blade.php ENDPATH**/ ?>
