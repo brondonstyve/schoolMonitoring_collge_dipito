@@ -37,7 +37,7 @@ class appelctController extends Controller
         $absence=false;
         $tab_appel=true;
 
-            return view ('index/appelCt',compact('utilisateur','tab_appel','note','nombre','classe','nombreclasse','ouverture','absence'));
+            return view ('index/appelCt',compact('utilisateur','tab_appel','classe','ouverture','absence'));
 
 
     }
@@ -106,7 +106,7 @@ class appelctController extends Controller
             $ouverture=true;
             $absence=true;
             $tab_appel=false;
-            return view('index/appelCt',compact('utilisateur','tab_appel','absence','class','note','nombre','classe','nombreclasse','liste','listec','ouverture','id','remplisseur','remplisseurCahier'));
+            return view('index/appelCt',compact('utilisateur','tab_appel','absence','class','classe','liste','ouverture','id','remplisseur','remplisseurCahier'));
 
     }
 
@@ -170,10 +170,10 @@ class appelctController extends Controller
 
           if ($enregistrement && $enregistrement1) {
               Flashy::success('L\'appel a été correctement enregistrées');
-              return  redirect()->route('appel_ct_path',compact('utilisateur','absence','note','nombre','classe','nombreclasse','ouverture'));
+              return  redirect()->route('appel_ct_path',compact('utilisateur','absence','classe','ouverture'));
           } else {
               Flashy::success('Erreur d\'enregistrement');
-              return  redirect()->route('appel_ct_path',compact('utilisateur','absence','note','nombre','classe','nombreclasse','ouverture'));
+              return  redirect()->route('appel_ct_path',compact('utilisateur','absence','classe','ouverture'));
           }
 
 

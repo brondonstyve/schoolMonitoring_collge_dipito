@@ -238,7 +238,7 @@
                                 <ul class="nav-second-level collapse" aria-expanded="false">
                                     <li><a href="{{ route('etudiants_path') }}">Gérer les élèves</a></li>
                                     <li><a href="{{ route('etudiants_path') }}">Transfert d'élèves</a></li>
-                                    <li><a href="{{ route('etudiants_path') }}">Notes</a></li>
+                                    <li><a href="{{ route('etudiants_path') }}">Liste</a></li>
                                 </ul>
                             </li>
 

@@ -73,7 +73,7 @@ class noteController extends Controller
 
 
            $ouverture=false;
-            return view('index/note',compact('classeE','sek','sekuence','utilisateur','note','groupe','nombre','classe','nombreclasse','ouverture'));
+            return view('index/note',compact('classeE','sek','sekuence','utilisateur','note','classe','ouverture'));
 
     }
 
@@ -221,7 +221,7 @@ class noteController extends Controller
             $matiiere=$request->matiiere;
             $sek=1;
             $ouverture=true;
-            return view('index/note',compact('sek','id','matiiere','utilisateur','sekuence','note','nombre','classe','nombreclasse','liste','listec','ouverture','id','remplisseur'));
+            return view('index/note',compact('sek','id','matiiere','utilisateur','sekuence','classe','liste','listec','ouverture','id','remplisseur'));
 
     }
 
@@ -365,10 +365,10 @@ class noteController extends Controller
 
         if ($enregistrement) {
             Flashy::success('Les notes ont été correctement enregistrées');
-            return  redirect()->route('note_path',compact('utilisateur','note','nombre','classe','nombreclasse','ouverture'));
+            return  redirect()->route('note_path',compact('utilisateur','classe','ouverture'));
         } else {
             Flashy::success('Erreur d\'enregistrement');
-            return  redirect()->route('note_path',compact('utilisateur','note','nombre','classe','nombreclasse','ouverture'));
+            return  redirect()->route('note_path',compact('utilisateur','classe','ouverture'));
         }
 
 

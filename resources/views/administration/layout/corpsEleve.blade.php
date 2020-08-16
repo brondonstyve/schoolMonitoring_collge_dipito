@@ -189,11 +189,6 @@
 
 
                                             @endif
-
-
-
-
-
                                         @endif
                                     @endfor
                                 @endfor
@@ -222,7 +217,11 @@
                                     @endphp
                                 @endif
                                 @endforeach
-
+                                @if (sizeOf($moratoire)==0)
+                                @php
+                                        $statue=false;
+                                @endphp
+                                @endif
                                 @if (!$statue)
                                         @if ($penalite<=0)
                                         <td>{{ $penalite }} FCFA</td>

@@ -219,7 +219,7 @@ class coursController extends Controller
         'kuestions.cour','kuestions.id','comptes.nom','comptes.prenom','comptes.photo')
         ->get();
 
-        return view('index/coursDetails', \compact('utilisateur','cours','course','reponse','reponse2'));
+        return view('index/coursDetails', \compact('utilisateur','cours','course','reponse'));
     }
 
 

@@ -1377,6 +1377,8 @@ $('#remove-scroll #mat #new-groupe').on('click', function(e) {
     })
 });
 
+
+//titulaire
 $(document).on('click', '#ajouter_titu', function(e) {
     var id = $(this).data('id');
     var classe = $(this).data('classe');
@@ -1560,8 +1562,6 @@ $(document).on('click', '#moratoire', function(e) {
     $('#anc-dat').val($(this).data('date'));
     $('#classe').val($(this).data('classe'));
     $('#matric').val($(this).data('matricule'));
-
-
 });
 
 
@@ -1573,7 +1573,6 @@ $(document).on('submit', '#form_moratoire', function(e) {
     e.preventDefault();
     var url = $(this).attr('action');
     var data = $(this).serialize();
-    console.log(data);
 
     $.post(url, data, function(data) {
         alert(data);

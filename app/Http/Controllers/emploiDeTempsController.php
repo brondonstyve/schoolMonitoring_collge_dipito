@@ -92,7 +92,7 @@ class emploiDeTempsController extends Controller
         $configedt=configedt::get();
 
         $test = true;
-        return view('index/emploi', compact('resultat','mati','configedt', 'resultatprof','periode', 'test', 'passe', 'jour_dispo', 'nombre', 'utilisateur', 'niveau', 'filiere', 'init', 'classe', 'remplisseur', 'classe'));
+        return view('index/emploi', compact('resultat','mati','configedt', 'resultatprof','periode', 'test', 'passe', 'jour_dispo', 'utilisateur', 'classe', 'remplisseur', 'classe'));
 
     }
 
@@ -348,7 +348,7 @@ class emploiDeTempsController extends Controller
 
             $configedt=configedt::get();
         $passe = true;
-        return view('administration/EDT', compact('configedt','resultat','periode', 'resultat', 'test', 'testeur', 'passe', 'testeurEmpl', 'nombre', 'disponibilite', 'matiere', 'utilisateur', 'niveau', 'filiere', 'init', 'classe', 'remplisseur', 'classe'));
+        return view('administration/EDT', compact('configedt','resultat','periode', 'resultat', 'test', 'testeur', 'passe', 'testeurEmpl',  'disponibilite', 'matiere', 'utilisateur', 'classe', 'remplisseur', 'classe'));
 
     }
 

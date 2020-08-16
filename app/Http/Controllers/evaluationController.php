@@ -85,6 +85,10 @@ class evaluationController extends Controller
             }else{
                 $sekuence=0;
             }
+            $createForm = true;
+            $createEpreuve = false;
+        return view('index/evaluation', compact('utilisateur', 'classe_mat', 'classe_a_evaluer',  'createForm', 'createEpreuve', 'epreuve', 'prof', 'evaluation','sekuence'));
+
         }
         //return $classe_a_evaluer;
 
@@ -114,13 +118,12 @@ class evaluationController extends Controller
             }
 
             $test = true;
-
+            return view('index/evaluation', compact('utilisateur', 'heure_de_debut', 'test', 'createForm', 'createEpreuve',  'evaluation'));
         }
 
         //$adresse=$_SERVER['REMOTE_HOST'];
         //dd($adresse) ;
 
-        return view('index/evaluation', compact('utilisateur', 'heure_de_debut', 'classe_mat', 'classe_a_evaluer', 'test', 'createForm', 'createEpreuve', 'epreuve', 'prof', 'evaluation','sekuence'));
     }
 
     //--generateur d'epreuve
